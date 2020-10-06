@@ -27,7 +27,7 @@ void draw() {
   background(51);
   translate(width*0.5, height*0.5);
   rotateY(angle);
-  angle += 0.05;
+  angle += 0.01;
 
   lights();
   fill(200);
