@@ -13,7 +13,7 @@ PImage earth;
 PShape globe;
 
 void setup() {
-  size(600, 600, P3D);
+  size(600, 900, P3D);
   earth = loadImage("earth.jpg");
   // table = loadTable("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.csv", "header");
   table = loadTable("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv", "header");
@@ -26,8 +26,6 @@ void setup() {
 void draw() {
   background(51);
   translate(width*0.5, height*0.5);
-  rotateY(angle);
-  angle += 0.01;
 
   lights();
   fill(200);
