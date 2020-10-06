@@ -13,6 +13,7 @@ PShape globe;
 
 void setup() {
   size(600, 900, P3D);
+  JSONObject o = loadJSONObject("https://www.n2yo.com/rest/v1/satellite/positions/25544/41.702/-76.014/0/2/&apiKey=J3GZZZ-GZ9A7W-A389KK-4KH3");
   earth = loadImage("earth.jpg");
 
   noStroke();
@@ -29,5 +30,4 @@ void draw() {
   noStroke();
   //sphere(r);
   shape(globe);
-
 }
