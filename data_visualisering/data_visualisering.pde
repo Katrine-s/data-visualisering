@@ -6,7 +6,6 @@
 
 float angle;
 
-Table table;
 float r = 200;
 
 PImage earth;
@@ -15,8 +14,6 @@ PShape globe;
 void setup() {
   size(600, 900, P3D);
   earth = loadImage("earth.jpg");
-  // table = loadTable("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.csv", "header");
-  table = loadTable("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.csv", "header");
 
   noStroke();
   globe = createShape(SPHERE, r);
